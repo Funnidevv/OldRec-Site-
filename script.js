@@ -8,7 +8,7 @@ window.onload = () => {
     { year: "2018", url: "http://localhost:2056/status" },
     { year: "2019", url: "http://localhost:2056/status" },
     { year: "2020", url: "http://localhost:2056/status" },
-    { year: "2021", url: "https://oldrecapi.biotest.dev/status" }
+    { year: "2021", url: "https://oldrecapi.biotest.dev/" }
   ];
 
   const checkStatus = async ({ year, url }) => {
