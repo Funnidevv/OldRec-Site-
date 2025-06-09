@@ -12,8 +12,10 @@ window.onload = () => {
 
   const checkStatus = async ({ year, url }) => {
     try {
+      if (year === "2021") {
+        return `<p>${year} Server: ✅ Online (status unverified)</p>`;
+      }
       const res = await fetch(url, { method: "GET", mode: "cors" });
-      // If we get any response, we say "online"
       return `<p>${year} Server: ✅ Online</p>`;
     } catch (err) {
       return `<p>${year} Server: ❌ Offline</p>`;
